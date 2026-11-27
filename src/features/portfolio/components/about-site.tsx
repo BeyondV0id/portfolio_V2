@@ -16,7 +16,10 @@ export function AboutSite() {
   const date = new Date().toISOString().slice(0, 10);
 
   return (
-    <section aria-label="About this site" className="relative mt-16">
+    <section
+      aria-label="About this site"
+      className="reveal-item reveal-page-main-rest reveal-step-5 relative mt-16"
+    >
       <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
         <span className="font-mono text-sm tracking-tight">{domain}</span>
       </div>
@@ -40,7 +43,7 @@ export function AboutSite() {
           </div>
           <div className="flex min-w-0 flex-col gap-2">
             <span className="text-xs text-muted-foreground">typeface</span>
-            <span className="font-mono text-sm">Geist · Geist Mono</span>
+            <span className="font-mono text-sm">Geist Sans · Paper Mono</span>
           </div>
           <div className="flex min-w-0 flex-col gap-2">
             <span className="text-xs text-muted-foreground">contact</span>

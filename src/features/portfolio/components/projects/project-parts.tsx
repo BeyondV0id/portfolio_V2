@@ -21,7 +21,7 @@ export function ProjectMark({ project }: { project: Project }) {
   return (
     <span
       aria-hidden
-      className="grid size-9 shrink-0 place-items-center rounded-lg bg-foreground/6 text-foreground"
+      className="grid size-9 shrink-0 place-items-center rounded-lg bg-surface text-foreground dark:bg-background"
     >
       {project.icon ? (
         <Image
@@ -75,7 +75,7 @@ export function ProjectLinks({ project }: { project: Project }) {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={`${label} for ${project.title}`}
-              className="pointer-events-auto rounded-sm text-sm text-muted-foreground focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
+              className="pointer-events-auto rounded-sm text-sm text-muted-foreground transition-colors duration-150 hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
             >
               {label}
             </a>
